@@ -5,3 +5,4 @@ $(window).scroll(function () {
       $('.header_title').removeClass('newClass');
     }
   });
+

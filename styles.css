@@ -29,14 +29,19 @@ body{
     z-index: 2;
 }
 .newClass{
-  top: -100px;
-  transition: 0.5s;
-}
+    top: -100px;
+    transition: 0.5s;
+  }
 .header_content{
     width: 1170px;
     margin: 0 auto;
     padding-top: 50px;
     display: flex;
+}
+.main_photo{
+    width: 50%;
+    margin-left: 45px;
+    padding-top: 25px;
 }
 .form_box{
     width: 50%;
@@ -77,10 +82,9 @@ form input{
     transition: 0.3s;
     color: #fff;
 }
-.main_photo{
-    width: 50%;
-    margin-left: 45px;
-    padding-top: 25px;
+.hide{
+    background-color: red;
+    display: none;
 }
 .products{
     padding-top: 50px;
@@ -155,6 +159,7 @@ form input{
     padding-bottom: 50px;
     margin: 0 auto;
     display: flex;
+    margin: 0 auto;
 }
 .first_features_box{
     width: 70%;

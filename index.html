@@ -18,11 +18,12 @@
             <div class="header_content">
                 <img src="img/main_photo.png" alt="main_photo" class="main_photo">
                 <div class="form_box">
-                    <form action="mail.php" method="POST">
+                    <form action="db.php">
                         <div class="form_title">Желаете приоблести?</div>
-                        <input type="text" name="user_name" id="name" placeholder="Введите ваше имя">
-                        <input type="text" name="user_phone" id="phone" placeholder="Введите ваш номер телефона">
-                        <input type="submit" name="submit" id="submit" value="Получить письмо">
+                        <div class="hide">s</div>
+                        <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+                        <input type="text" name="phone" id="phone" placeholder="Введите ваш номер телефона" required>
+                        <input type="submit" name="submit" id="submit" value="Получить письмо" onclick="start()">
                     </form>
                 </div>
             </div>
@@ -34,114 +35,114 @@
             <div class="products_photo">
                 <div class="products_photo_content">
                     <div class="products_photo_img_box">
-                        <img src="img/1.jpg" alt="first_photo">
+                        <img src="img/1.png" alt="procudts_photo">
                     </div>
                     <div class="loop_img">
-                        <img src="img/1.jpg" alt="" class="loop_photo">
+                        <img src="img/1.png" alt="loop_photo" class="loop_photo">
                     </div>
                     <div class="products_photo_price">
                         Цена: <span
-                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">650грн
-                        </span><strike>780</strike>
-                    </div>
-                </div>
-                <div class="products_photo_content">
-                    <div class="products_photo_img_box">
-                        <img src="img/2.jpg" alt="first_photo">
-                    </div>
-                    <div class="loop_img">
-                        <img src="img/2.jpg" alt="" class="loop_photo">
-                    </div>
-                    <div class="products_photo_price">
-                        Цена: <span
-                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">610грн
-                        </span><strike>730</strike>
-                    </div>
-                </div>
-                <div class="products_photo_content">
-                    <div class="products_photo_img_box">
-                        <img src="img/3.jpg" alt="first_photo">
-                    </div>
-                    <div class="loop_img">
-                        <img src="img/3.jpg" alt="" class="loop_photo">
-                    </div>
-                    <div class="products_photo_price">
-                        Цена: <span
-                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">900грн
-                        </span><strike>1080</strike>
-                    </div>
-                </div>
-                <div class="products_photo_content">
-                    <div class="products_photo_img_box">
-                        <img src="img/4.jpg" alt="first_photo">
-                    </div>
-                    <div class="loop_img">
-                        <img src="img/4.jpg" alt="" class="loop_photo">
-                    </div>
-                    <div class="products_photo_price">
-                        Цена: <span
-                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">800грн
-                        </span><strike>960</strike>
-                    </div>
-                </div>
-                <div class="products_photo_content">
-                    <div class="products_photo_img_box">
-                        <img src="img/5.jpg" alt="first_photo">
-                    </div>
-                    <div class="loop_img">
-                        <img src="img/5.jpg" alt="" class="loop_photo">
-                    </div>
-                    <div class="products_photo_price">
-                        Цена: <span
-                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">650грн
-                        </span><strike>780</strike>
-                    </div>
-                </div>
-                <div class="products_photo_content">
-                    <div class="products_photo_img_box">
-                        <img src="img/6.jpg" alt="first_photo">
-                    </div>
-                    <div class="loop_img">
-                        <img src="img/6.jpg" alt="" class="loop_photo">
-                    </div>
-                    <div class="products_photo_price">
-                        Цена: <span
-                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">550грн
-                        </span><strike>660</strike>
-                    </div>
-                </div>
-                <div class="products_photo_content">
-                    <div class="products_photo_img_box">
-                        <img src="img/7.jpg" alt="first_photo">
-                    </div>
-                    <div class="loop_img">
-                        <img src="img/7.jpg" alt="" class="loop_photo">
-                    </div>
-                    <div class="products_photo_price">
-                        Цена: <span
-                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">800грн
-                        </span><strike>960</strike>
-                    </div>
-                </div>
-                <div class="products_photo_content">
-                    <div class="products_photo_img_box">
-                        <img src="img/8.jpg" alt="first_photo">
-                    </div>
-                    <div class="loop_img">
-                        <img src="img/8.jpg" alt="" class="loop_photo">
-                    </div>
-                    <div class="products_photo_price">
-                        Цена: <span
-                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">750грн
+                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">775грн
                         </span><strike>900</strike>
                     </div>
                 </div>
                 <div class="products_photo_content">
                     <div class="products_photo_img_box">
-                        <img src="img/9.jpg" alt="first_photo">
+                        <img src="img/2.png" alt="procudts_photo">
                     </div>
                     <div class="loop_img">
-                        <img src="img/9.jpg" alt="" class="loop_photo">
+                        <img src="img/2.png" alt="loop_photo" class="loop_photo">
+                    </div>
+                    <div class="products_photo_price">
+                        Цена: <span
+                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">1040грн
+                        </span><strike>1250</strike>
+                    </div>
+                </div>
+                <div class="products_photo_content">
+                    <div class="products_photo_img_box">
+                        <img src="img/3.png" alt="procudts_photo">
+                    </div>
+                    <div class="loop_img">
+                        <img src="img/3.png" alt="loop_photo" class="loop_photo">
+                    </div>
+                    <div class="products_photo_price">
+                        Цена: <span
+                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">700грн
+                        </span><strike>850</strike>
+                    </div>
+                </div>
+                <div class="products_photo_content">
+                    <div class="products_photo_img_box">
+                        <img src="img/4.png" alt="procudts_photo">
+                    </div>
+                    <div class="loop_img">
+                        <img src="img/4.png" alt="loop_photo" class="loop_photo">
+                    </div>
+                    <div class="products_photo_price">
+                        Цена: <span
+                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">835грн
+                        </span><strike>1000</strike>
+                    </div>
+                </div>
+                <div class="products_photo_content">
+                    <div class="products_photo_img_box">
+                        <img src="img/5.png" alt="procudts_photo">
+                    </div>
+                    <div class="loop_img">
+                        <img src="img/5.png" alt="loop_photo" class="loop_photo">
+                    </div>
+                    <div class="products_photo_price">
+                        Цена: <span
+                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">1765грн
+                        </span><strike>2100</strike>
+                    </div>
+                </div>
+                <div class="products_photo_content">
+                    <div class="products_photo_img_box">
+                        <img src="img/6.png" alt="procudts_photo">
+                    </div>
+                    <div class="loop_img">
+                        <img src="img/6.png" alt="loop_photo" class="loop_photo">
+                    </div>
+                    <div class="products_photo_price">
+                        Цена: <span
+                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">890грн
+                        </span><strike>1050</strike>
+                    </div>
+                </div>
+                <div class="products_photo_content">
+                    <div class="products_photo_img_box">
+                        <img src="img/7.png" alt="procudts_photo">
+                    </div>
+                    <div class="loop_img">
+                        <img src="img/7.png" alt="loop_photo" class="loop_photo">
+                    </div>
+                    <div class="products_photo_price">
+                        Цена: <span
+                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">645грн
+                        </span><strike>775</strike>
+                    </div>
+                </div>
+                <div class="products_photo_content">
+                    <div class="products_photo_img_box">
+                        <img src="img/8.png" alt="procudts_photo">
+                    </div>
+                    <div class="loop_img">
+                        <img src="img/8.png" alt="loop_photo" class="loop_photo">
+                    </div>
+                    <div class="products_photo_price">
+                        Цена: <span
+                            style="color: red; font-size: 17px; padding-left: 5px; padding-right: 5px; font-weight: 600;">1140грн
+                        </span><strike>1400</strike>
+                    </div>
+                </div>
+                <div class="products_photo_content">
+                    <div class="products_photo_img_box">
+                        <img src="img/9.png" alt="procudts_photo">
+                    </div>
+                    <div class="loop_img">
+                        <img src="img/9.png" alt="loop_photo" class="loop_photo">
                     </div>
                     <div class="products_photo_price">
                         Цена: <span
@@ -173,13 +174,14 @@
                                 alt="instagram_logo"></a></div>
                     <div class="footer_links_box"><a href="mailto:three.clocks654@gmail.com" target="_blank"
                             class="footer_links"><img src="img/gmail_logo.png" alt="gmail_logo"></a></div>
-                    <div class="footer_links_box"><a href="" target="_blank" class="footer_links"><img src="img/olx.png"
+                    <div class="footer_links_box"><a href="https://www.olx.ua/list/user/zluAF/" target="_blank" class="footer_links"><img src="img/olx.png"
                                 alt="olx_logo"></a></div>
                 </div>
             </div>
         </section>
     </main>
     <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
     <script src="main.js"></script>
 </body>
 
